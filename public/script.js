@@ -90,7 +90,7 @@ if (contactForm) {
         const backendURL = "https://my-portfolio1-5bz4.onrender.com/";
 
         try {
-            const response = await fetch(backendURL, {
+            const response = await fetch("https://my-portfolio1-5bz4.onrender.com", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData)
