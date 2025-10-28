@@ -1,0 +1,13 @@
+# Node dependencies
+node_modules/
+
+# Environment variables (keep your Gmail password secret!)
+.env
+
+# System files
+.DS_Store
+.vscode/
+
+# Logs and debug files
+npm-debug.log
+*.log
