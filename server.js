@@ -10,11 +10,7 @@ const nodemailer = require("nodemailer");
 const app = express();
 
 // ✅ Middlewares
-app.use(cors({
-    origin: "https://YOUR_USERNAME.github.io", // ← replace with your actual GitHub Pages domain
-    methods: ["GET", "POST"],
-    allowedHeaders: ["Content-Type"]
-}));
+app.use(cors({ origin: "*" }));
 
 app.use(express.json());
 app.use(express.static("public")); // Serves your frontend files (index.html, etc.)
